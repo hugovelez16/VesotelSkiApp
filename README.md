@@ -109,6 +109,17 @@ POSTGRES_DB=vesotel_db
 SECRET_KEY=tu_clave_secreta_generada
 DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
 
+# Configuración de Correo (Imprescindible para 2FA)
+MAIL_USERNAME=tu_email@gmail.com
+MAIL_PASSWORD=tu_contraseña_de_aplicacion
+MAIL_FROM=tu_email@gmail.com
+MAIL_PORT=587
+MAIL_SERVER=smtp.gmail.com
+MAIL_FROM_NAME="Vesotel Ski"
+MAIL_STARTTLS=True
+MAIL_SSL_TLS=False
+USE_CREDENTIALS=True
+
 # Frontend
 NEXT_PUBLIC_API_URL=http://localhost:8000
 ```

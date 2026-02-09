@@ -8,6 +8,10 @@ def test_smtp():
     smtp_port = int(os.getenv("MAIL_PORT", 587))
     smtp_username = os.getenv("MAIL_USERNAME")
     smtp_password = os.getenv("MAIL_PASSWORD")
+
+    if not smtp_username or not smtp_password:
+        print("❌ Error: MAIL_USERNAME and MAIL_PASSWORD environment variables are required.")
+        return
     
     print(f"Testing SMTP to {smtp_server}:{smtp_port}")
     print(f"User: {smtp_username}")
