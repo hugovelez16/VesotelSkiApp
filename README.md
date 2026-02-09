@@ -16,20 +16,20 @@
 
 La plataforma está diseñada para diferentes niveles de acceso, asegurando que cada usuario tenga las herramientas necesarias para su función:
 
-### 👑 Administrador del Sistema (Super Admin)
+### Administrador del Sistema (Super Admin)
 El nivel más alto de control, encargado del mantenimiento de la plataforma.
 *   **Gestión Global**: Creación y configuración de nuevas escuelas (empresas).
 *   **Control de Usuarios**: Administración de todos los usuarios registrados en el sistema.
 *   **Ajustes**: Configuración de variables globales del sistema.
 
-### 🏢 Gestor de Escuela (Manager)
+### Gestor de Escuela (Manager)
 El director o responsable administrativo de una escuela de esquí concreta.
 *   **Equipo**: Gestión de altas y bajas de instructores.
 *   **Tarificación**: Definición de tarifas personalizadas por instructor (Hora, Día, Coordinación, Nocturnidad).
 *   **Supervisión**: Visualización y validación de todos los partes de trabajo generados por su equipo.
 *   **Nóminas**: Generación de reportes detallados para el cálculo de nóminas y pagos.
 
-### ⛷️ Instructor / Cliente (Worker)
+### Instructor / Cliente (Worker)
 El profesional que imparte las clases. Su interfaz está optimizada para el uso rápido en pistas.
 *   **Registro de Clases**: Formulario simplificado para registrar clases particulares o días de cursillo.
 *   **Historial**: Acceso completo a su historial de trabajos realizados.
