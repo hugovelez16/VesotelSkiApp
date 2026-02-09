@@ -1,0 +1,82 @@
+name: vesotel-workspace
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: vesotel_postgres_container
+    env_file:
+      - .env
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    volumes:
+      - ./01_PostgresData:/var/lib/postgresql/data
+    networks:
+      - db
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+
+  backend:
+    build: ./02_Backend
+    container_name: vesotel_backend_container
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
+      SECRET_KEY: ${SECRET_KEY}
+      MAIL_USERNAME: ${MAIL_USERNAME}
+      MAIL_PASSWORD: ${MAIL_PASSWORD}
+      MAIL_FROM: ${MAIL_FROM}
+      MAIL_PORT: ${MAIL_PORT}
+      MAIL_SERVER: ${MAIL_SERVER}
+      MAIL_FROM_NAME: ${MAIL_FROM_NAME}
+      MAIL_STARTTLS: ${MAIL_STARTTLS}
+      MAIL_SSL_TLS: ${MAIL_SSL_TLS}
+      USE_CREDENTIALS: ${USE_CREDENTIALS}
+      SHOPIFY_STORE_URL: ${SHOPIFY_STORE_URL}
+      SHOPIFY_ACCESS_TOKEN: ${SHOPIFY_ACCESS_TOKEN}
+      SHOPIFY_WEBHOOK_SECRET: ${SHOPIFY_WEBHOOK_SECRET}
+    volumes:
+      - ./02_Backend:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres
+    networks:
+      - ski_back
+      - db
+    restart: unless-stopped
+
+  frontend:
+    # Production build using multi-stage Dockerfile
+    build:
+      context: ./03_Frontend
+      args:
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL}
+    container_name: vesotel_frontend_container
+    env_file:
+      - .env
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL}
+    depends_on:
+      - backend
+    networks:
+      - ski_back
+      - proxy_network
+    restart: unless-stopped
+
+
+networks:
+  db:
+    name: vesotel_db_network
+    driver: bridge
+    internal: true
+  ski_back:
+    name: ski_back_network
+    driver: bridge
+  proxy_network:
+    external: true
