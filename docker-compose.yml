@@ -69,7 +69,6 @@ services:
       - proxy_network
     restart: unless-stopped
 
-
 networks:
   db:
     name: vesotel_db_network
