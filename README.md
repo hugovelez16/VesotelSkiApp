@@ -35,6 +35,17 @@ El profesional que imparte las clases. Su interfaz está optimizada para el uso 
 *   **Historial**: Acceso completo a su historial de trabajos realizados.
 *   **Transparencia**: Visualización del cálculo de sus ingresos (Bruto/Neto) según las tarifas pactadas.
 
+## Galería
+
+Aquí puedes ver algunas capturas de pantalla de la aplicación en funcionamiento:
+
+| | |
+|:---:|:---:|
+| **Dashboard del Instructor** | **Panel de Administración** |
+| ![Dashboard](https://via.placeholder.com/600x400?text=Dashboard+Instructor) | ![Admin Panel](https://via.placeholder.com/600x400?text=Admin+Panel) |
+| **Gestión de Usuarios** | **Generación de Nóminas** |
+| ![Usuarios](https://via.placeholder.com/600x400?text=User+Management) | ![Nominas](https://via.placeholder.com/600x400?text=Payroll) |
+
 ## Tecnologias
 
 Este proyecto sigue una arquitectura de microservicios proporcionada por Docker:
