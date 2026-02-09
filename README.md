@@ -82,7 +82,14 @@ El sistema se compone de los siguientes contenedores Docker:
     docker compose up -d --build
     ```
 
-4.  **Acceder a la App**:
+4.  **Inicializar Base de Datos**:
+    Ejecuta el script incluido para crear las empresas por defecto y el usuario administrador.
+    ```bash
+    docker compose exec backend python init_db.py
+    ```
+    *Crea usuario: `admin@example.com` / Password: `admin123`*
+
+5.  **Acceder a la App**:
     *   Frontend: `http://localhost:3000`
     *   Documentación API Backend: `http://localhost:8000/docs`
 
