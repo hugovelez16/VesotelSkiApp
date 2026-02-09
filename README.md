@@ -40,12 +40,14 @@ El profesional que imparte las clases. Su interfaz está optimizada para el uso 
 
 Aquí puedes ver algunas capturas de pantalla de la aplicación en funcionamiento:
 
-| | |
-|:---:|:---:|
-| **Dashboard del Instructor** | **Panel de Administración** |
-| ![Dashboard](https://via.placeholder.com/600x400?text=Dashboard+Instructor) | ![Admin Panel](https://via.placeholder.com/600x400?text=Admin+Panel) |
-| **Gestión de Usuarios** | **Generación de Nóminas** |
-| ![Usuarios](https://via.placeholder.com/600x400?text=User+Management) | ![Nominas](https://via.placeholder.com/600x400?text=Payroll) |
+**USER**
+<img width="1919" height="963" alt="Captura de pantalla 2026-02-09 205608" src="https://github.com/user-attachments/assets/14181b2a-2858-47a2-a5b6-f572baa867c5" />
+<img width="1919" height="965" alt="Captura de pantalla 2026-02-09 205633" src="https://github.com/user-attachments/assets/952db0b5-9bea-4a77-ad4f-88bc1531c1b0" />
+<img width="1919" height="963" alt="Captura de pantalla 2026-02-09 205648" src="https://github.com/user-attachments/assets/4c5632d4-2253-48ed-a6e9-e454d9f4caa2" />
+<img width="1919" height="962" alt="Captura de pantalla 2026-02-09 205657" src="https://github.com/user-attachments/assets/fc719d1d-08cb-4c3a-9bae-9211af10a8c7" />
+**ADMIN**
+<img width="1919" height="962" alt="Captura de pantalla 2026-02-09 210357" src="https://github.com/user-attachments/assets/67f9839f-24a2-401d-921d-6b55703091c2" />
+<img width="1919" height="960" alt="Captura de pantalla 2026-02-09 211051" src="https://github.com/user-attachments/assets/5c428d1d-fbfb-4401-bfa4-5359ffe34ec4" />
 
 ## Tecnologias
 
