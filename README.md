@@ -2,7 +2,8 @@
 
 **Ski Vesotel** es una plataforma de gestión integral diseñada para escuelas de esquí. Optimiza las operaciones permitiendo a los instructores registrar sus horas (clases particulares, cursillos) y facilitando a la administración la gestión de nóminas, tarifas y roles de usuario.
 
-![Banner Ski Vesotel](https://via.placeholder.com/1200x500?text=Ski+Vesotel+Platform)
+<img width="1919" height="963" alt="image" src="https://github.com/user-attachments/assets/43e3b673-7e19-40fc-99c0-82c45a63a58b" />
+
 
 ## Caracteristicas
 
